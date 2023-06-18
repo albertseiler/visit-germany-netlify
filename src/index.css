@@ -213,9 +213,8 @@ nav {
   cursor: pointer;
 }
 
-.nav-toggle:hover {
-
-  transform: rotate(90deg);
+.nav-toggle:active {
+  transform: rotate(20deg);
 }
 
 .links-container {
