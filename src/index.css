@@ -222,7 +222,7 @@ nav {
   overflow: hidden;
   transition: var(--transition);
   position: absolute;
-  top: 3.5rem;
+  top: 5vh;
   left: 0;
   z-index: 999;
   background: whitesmoke;
@@ -301,7 +301,7 @@ nav {
 }
 
 .slick-dots {
-  top: 670px;
+  top: 55vh;
 }
 
 .slick-dots li button:before {
@@ -319,7 +319,7 @@ nav {
 
 .slider-title {
   position: absolute;
-  top: 35rem;
+  top: 44.5vh;
   font-weight: bold;
   padding-left: 1rem;
   color: white;
