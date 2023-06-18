@@ -164,6 +164,14 @@ ul {
   object-fit: cover;
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* 
 ============= 
 PROJECT CSS
@@ -214,7 +222,8 @@ nav {
 }
 
 .nav-toggle:active {
-  transform: rotate(360deg);
+  transform: rotate(90deg);
+
 }
 
 .links-container {
