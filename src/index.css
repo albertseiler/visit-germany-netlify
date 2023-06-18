@@ -217,13 +217,12 @@ nav {
   font-size: 1.5rem;
   background: transparent;
   border-color: transparent;
-  transition: 1s ease-out;
+  transition: 60ms ease-in-out;
   cursor: pointer;
 }
 
 .nav-toggle:active {
   transform: rotate(90deg);
-
 }
 
 .links-container {
