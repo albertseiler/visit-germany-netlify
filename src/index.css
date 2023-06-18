@@ -217,13 +217,15 @@ nav {
   font-size: 1.5rem;
   background: transparent;
   border-color: transparent;
-  transition: 60ms ease-in-out;
+  transition: 100ms ease-in-out;
   cursor: pointer;
 }
 
 .nav-toggle:active {
   transform: rotate(90deg);
 }
+
+
 
 .links-container {
   overflow: hidden;
@@ -378,6 +380,21 @@ nav {
   margin: 0.5rem 0 0.5rem 0;
 }
 
+.otherplaces-image {
+  position: relative;
+}
+
+.visit-button {
+  position: absolute;
+  bottom: 0.1rem;
+  left: 0;
+  border: none;
+  font-size: 2rem;
+  background: var(--primary-200);
+  color: var(--primary-900);
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
 @media screen and (min-width: 700px) {
 
   .otherplaces-image img {
@@ -404,7 +421,12 @@ nav {
     margin: 0;
     margin-bottom: 0.5rem;
   }
+
+  .visit-button {
+    bottom: 0;
+  }
 }
+
 
 @media screen and (min-width:800px) {
 

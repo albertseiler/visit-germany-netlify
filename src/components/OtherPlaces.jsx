@@ -1,6 +1,6 @@
 import { otherplaces } from "../assets/data";
 import BackToTopButton from "./BackToTopButton";
-
+import { BiMap } from 'react-icons/bi'
 
 
 const OtherPlaces = () => {
@@ -9,6 +9,7 @@ const OtherPlaces = () => {
         const element = document.getElementById(`place-${id}`);
         element.scrollIntoView({ behavior: "smooth" });
     };
+
 
 
     return (
@@ -29,22 +30,24 @@ const OtherPlaces = () => {
             </div>
             <div className="colored-underline"></div>
             {otherplaces.map((place) => {
+                const mapsLink = "https://www.google.com/maps/place/" + place.title;
                 return (
                     <>
                         <div id={`place-${place.id}`} key={place.id} className="otherplaces-container">
                             <div className="otherplaces-image" >
                                 <img src={place.image} alt={place.title} />
+                                <a className="visit-button" target="_blank" rel="noreferrer" href={mapsLink} ><BiMap /></a>
                             </div>
                             <div className="otherplaces-text">
                                 <h2 className="otherplaces-title">{place.title}</h2>
                                 <p>{place.text}</p>
                             </div>
-                        </div>
+                        </div >
                     </>
                 )
             })}
             <BackToTopButton />
-        </section>
+        </section >
     )
 }
 export default OtherPlaces
