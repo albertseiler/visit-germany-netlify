@@ -459,14 +459,28 @@ nav {
 
 
 @media screen and (min-width:1350px) {
+  .otherplaces-positioning {
+    margin: 3rem 5rem 0rem 5rem;
+  }
+
+  .otherplaces-title {
+    font-size: 33px;
+  }
+
   .otherplaces-text p {
     line-height: 26px;
-    font-size: 23px;
+    font-size: 18px;
   }
 
   .otherplaces-positioning h1 {
     font-size: 3.5rem;
   }
+
+  .otherplaces-image img {
+    width: 30vw;
+  }
+
+
 }
 
 .otherplaces-container:last-child {
